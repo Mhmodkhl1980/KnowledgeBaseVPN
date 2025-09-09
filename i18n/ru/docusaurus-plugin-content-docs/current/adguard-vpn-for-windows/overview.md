@@ -108,28 +108,32 @@ sidebar_position: 1
 
 Эта функция шифрует ваш трафик так, что даже квантовые компьютеры не могут его перехватить.
 
-##### Использовать QUIC
+##### AdGuard VPN protocol
 
-Это экспериментальная функция, включение которой позволит AdGuard использовать передовой протокол шифрования QUIC. У него много преимуществ, но самое заметное в том, что он может улучшать качество соединения в неидеальных условиях — например, при использовании мобильного интернета или при подключении к общественным сетям Wi-Fi.
+![Select VPN protocol *border](https://cdn.adtidy.org/content/release_notes/vpn/windows/v2.7/auto_en.png)
+
+By default, AdGuard VPN protocol uses dynamic VPN protocol selection (*Auto-select* option). That means that AdGuard VPN automatically figures out which protocol — HTTP2/TLS or HTTP3/QUIC — will give you the best performance and switches to it instantly. This improves VPN speed and stability, which is particularly helpful in regions where VPN usage is restricted or unreliable.
+
+If you wish, you can switch AdGuard VPN to use only HTTP2/TLS or HTTP3/QUIC protocol instead of *Auto-select*. Each protocol has its strengths, but the best choice can vary depending on your location, network conditions, and even the server you connect to.
 
 ##### Использовать WinTun
 
-WinTun — это драйвер маршрутизации трафика, обычно используемый для реализации VPN в Windows. Он улучшает качество VPN-подключений за счёт создания виртуального сетевого адаптера. По умолчанию AdGuard VPN использует обычный WFP-драйвер (и TDI-драйвер для Windows 7).
+WinTun is a traffic routing driver commonly used for VPN implementations on Windows that improves the quality of VPN connections by creating a virtual network adapter. By default AdGuard VPN uses the regular WFP driver (and TDI driver for Windows 7).
 
 #### Исключения подсетей
 
-Эта функция позволяет добавлять подсети, чтобы исключить трафик от определённых устройств, подключённых к вашей сети. Например, от вашего робота-пылесоса.
+This feature allows you to add subnets to exclude traffic from specific devices connected to your network. For example, your robot vacuum cleaner.
 
 ## Другие настройки
 
 ### О программе
 
-Во вкладке **О программе** вы найдёте информацию о текущей версии AdGuard VPN для Windows, кнопку проверки наличия обновлений, а также ссылки: на сайт AdGuard VPN, Лицензионное соглашение и Политику конфиденциальности.
+The **About** tab provides information about the current version of AdGuard VPN for Windows, an update button, and links to the AdGuard VPN website, EULA, and Privacy policy.
 
 ### Аккаунт
 
-Здесь размещена информация о статусе вашей лицензии, а также ссылка на ваш личный кабинет AdGuard, где вы можете купить новую подписку, улучшить или продлить уже существующую.
+Here you can find information about your license status, as well as a link to your personal AdGuard account, where you can manage your current subscriptions and purchase new ones.
 
 ## Поддержка
 
-Эта вкладка предназначена для помощи в решении вопросов пользователей: здесь вы найдёте ссылку на FAQ, сможете сообщить об ошибке или оставить отзыв, а также здесь можно экспортировать логи, если служба поддержки попросит вас об этом.
+This tab is aimed to solve users’ questions: there you can find a link to the FAQ page, report a bug or leave feedback, and export logs if the support team asks you to.

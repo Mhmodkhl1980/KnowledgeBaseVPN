@@ -108,28 +108,32 @@ Všechny záznamy jsou uloženy lokálně v zařízení a v případě potřeby 
 
 Tato funkce šifruje provoz tak, aby je nemohly zachytit ani kvantové počítače.
 
-##### Použití QUIC
+##### AdGuard VPN protocol
 
-Jedná se o experimentální funkci, která umožňuje AdGuardu používat pokročilý šifrovací protokol QUIC. Má mnoho výhod, ale tou nejvýznamnější je, že dokáže zlepšit kvalitu připojení za neideálních podmínek, například při používání mobilního internetu nebo při připojování k veřejným sítím Wi-Fi.
+![Select VPN protocol *border](https://cdn.adtidy.org/content/release_notes/vpn/windows/v2.7/auto_en.png)
+
+By default, AdGuard VPN protocol uses dynamic VPN protocol selection (*Auto-select* option). That means that AdGuard VPN automatically figures out which protocol — HTTP2/TLS or HTTP3/QUIC — will give you the best performance and switches to it instantly. This improves VPN speed and stability, which is particularly helpful in regions where VPN usage is restricted or unreliable.
+
+If you wish, you can switch AdGuard VPN to use only HTTP2/TLS or HTTP3/QUIC protocol instead of *Auto-select*. Each protocol has its strengths, but the best choice can vary depending on your location, network conditions, and even the server you connect to.
 
 ##### Použít WinTun
 
-WinTun je ovladač směrování provozu, který se běžně používá pro implementace VPN v systému Windows a který zlepšuje kvalitu připojení VPN vytvořením virtuálního síťového adaptéru. Ve výchozím nastavení používá AdGuard VPN běžný ovladač WFP (a ovladač TDI pro Windows 7).
+WinTun is a traffic routing driver commonly used for VPN implementations on Windows that improves the quality of VPN connections by creating a virtual network adapter. By default AdGuard VPN uses the regular WFP driver (and TDI driver for Windows 7).
 
 #### Výjimky podsítě
 
-Tato funkce umožňuje přidávat podsítě pro vyloučení provozu z konkrétních zařízení připojených k síti. Např. váš robotický vysavač.
+This feature allows you to add subnets to exclude traffic from specific devices connected to your network. For example, your robot vacuum cleaner.
 
 ## Další karty
 
 ### O programu
 
-Na kartě **O programu** najdete informace o aktuální verzi AdGuard VPN pro Windows, tlačítko pro aktualizaci a odkazy na webové stránky AdGuardu, fórum, smlouvu EULA a zásady ochrany osobních údajů.
+The **About** tab provides information about the current version of AdGuard VPN for Windows, an update button, and links to the AdGuard VPN website, EULA, and Privacy policy.
 
 ### Účet
 
-Zde najdete informace o stavu své licence a také odkaz na svůj osobní účet AdGuard, kde můžete spravovat své stávající předplatné a nakupovat nové.
+Here you can find information about your license status, as well as a link to your personal AdGuard account, where you can manage your current subscriptions and purchase new ones.
 
 ## Podpora
 
-Tato karta je zaměřena na řešení otázek uživatelů: najdete zde odkaz na stránku s nejčastějšími dotazy, můžete nahlásit chybu nebo zanechat zpětnou vazbu a exportovat protokoly, pokud vás o to tým podpory požádá.
+This tab is aimed to solve users’ questions: there you can find a link to the FAQ page, report a bug or leave feedback, and export logs if the support team asks you to.

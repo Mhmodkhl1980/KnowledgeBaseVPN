@@ -117,6 +117,10 @@ Existují pouze dvě úrovně záznamu, ale důrazně doporučujeme používat p
 
 Přestože se tato možnost nachází v *Rozšířených nastavení*, lze ji bez váhání povolit. Ikonu AdGuard VPN můžete z panelu nabídek skrýt, nezabrání to běhu naší aplikace na pozadí.
 
-#### Použití QUIC
+##### AdGuard VPN protocol
 
-Komunikační protokol QUIC je nejnovější a nejmodernější verzí HTTP protokolu. Přepnutím přepínače získáte lepší kvalitu připojení v ne zcela ideálních podmínkách, například při používání mobilních dat v metru nebo ve výtahu.
+![Select VPN protocol](https://cdn.adtidy.org/content/release_notes/vpn/mac/v2.7/protocol_en.png)
+
+By default, AdGuard VPN protocol uses dynamic VPN protocol selection (*Auto-select* option). That means that AdGuard VPN automatically figures out which protocol — HTTP2/TLS or HTTP3/QUIC — will give you the best performance and switches to it instantly. This improves VPN speed and stability, which is particularly helpful in regions where VPN usage is restricted or unreliable.
+
+If you wish, you can switch AdGuard VPN to use only HTTP2/TLS or HTTP3/QUIC protocol instead of *Auto-select*. Each protocol has its strengths, but the best choice can vary depending on your location, network conditions, and even the server you connect to.

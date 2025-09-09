@@ -152,6 +152,14 @@ Tuto možnost lze použít k odesílání záznamů aplikace a systémových inf
 
 Tato možnost umožňuje exportovat technické informace, které mohou být užitečné při řešení problémů a které jsou někdy vyžadovány naší podporou a vývojáři.
 
+#### AdGuard VPN protocol
+
+![Select VPN protocol *mobile_border](https://cdn.adtidy.org/content/release_notes/vpn/ios/v2.8/Auto_EN.PNG)
+
+By default, AdGuard VPN protocol uses dynamic VPN protocol selection (*Auto-select* option). That means that AdGuard VPN automatically figures out which protocol — HTTP2/TLS or HTTP3/QUIC — will give you the best performance and switches to it instantly. This improves VPN speed and stability, which is particularly helpful in regions where VPN usage is restricted or unreliable.
+
+If you wish, you can switch AdGuard VPN to use only HTTP2/TLS or HTTP3/QUIC protocol instead of *Auto-select*. Each protocol has its strengths, but the best choice can vary depending on your location, network conditions, and even the server you connect to.
+
 ### Odeslat technická a interakční data
 
 Zapnutím této možnosti nám pomáháte lépe porozumět tomu, jak uživatelé s aplikací pracují. Tyto informace používáme ke zlepšení uživatelského komfortu.
